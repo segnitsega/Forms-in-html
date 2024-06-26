@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>forms</title>
+</head>
+<body>
+	<header>
+		<h1>THESE ARE FORMS IN HTML</h1>
+	</header>
+
+	<main>
+	<div>
+		<label for="username">Username: </label>
+		<input type="text" id="username" name="username" placeholder="segnitsega" required>
+	</div>
+
+	<div>
+		<label for="email">E-mail: </label>
+		<input type="email" id="email" name="email" placeholder="segni@gmail.com" required>
+	</div>
+
+	<div>
+   		<label for="password">Password: </label>
+		<input type="password" id="password" name="password" minlength="6" maxlength="14" required>
+	</div>
+
+	<div>
+		<label for="phonenumber">Phone#: </label>
+		<input type="tel" id="phonenumber" name="phonenumber" placeholder="09-83-62-26-04" pattern="[0-9]{2},[0-9]{2},[0-9]{2},[0-9]{2},[0-9]{2}">
+	</div>
+
+	<div>
+		<label for="bday">Birth-day</label>
+		<input type="date" id="bday" name="birth-day">
+	</div>
+
+	<div>
+		<label for="quantity">Quantity</label>
+		<input type="number" id="quantity" name="quantity" max="99" min="1" placeholder="1">
+	</div>
+		
+	<div>
+		<label for="mr.">Mr.</label>
+		<input type="radio" id="mr." name="title">
+		<label for="ms.">Ms.</label>
+		<input type="radio" id="ms." name="title">
+		<label for="PhD.">PhD.</label>
+		<input type="radio" id="PhD." name="title">
+	</div>
+
+	<div>
+		<label for="payment">Select payment options</label>
+	
+		<select id="payment" name="payment">
+			<option value="visa">Visa</option>	
+			<option value="chapa">Chapa</option>
+			<option value="paypal">Paypal</option>		
+		</select>
+	</div>
+
+	<div>
+		<label for="subscribe">Subscribe</label>
+		<input type="checkbox" id="subscribe" name="subscribe">
+	</div>
+
+	<div>
+		<label for="comment">Comment: </label>
+		<textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+	</div>
+
+	<div>
+		<label for="file">File</label>
+		<input type="file" id="file" name="file" accept="image/png, image/jpeg, application/pdf">
+	</div>
+
+	<div>
+		<input type="reset"><br>
+		<input type="submit">
+	</div>
+	
+	</main>
+
+	<footer>
+		<p>&copy; segnitsega: all rights are reserved</p>
+	</footer>
+</body>
+</html>
